@@ -30,11 +30,9 @@ export class FootballServiceService {
 
     const config = await this.getConfigurations();
 
-    if (config === null){
+    if (config === null) {
       throw new Error('No baseurl found');
     }
-
-    console.log('BaseUrl: ' + config.BaseUrl);
 
     return config.BaseUrl;
   }
@@ -52,8 +50,6 @@ export class FootballServiceService {
     if (config.ApiKey === null) {
       throw new Error('No apikey found');
     }
-
-    console.log('ApiKey' + config.ApiKey);
 
     return config.ApiKey;
   }
