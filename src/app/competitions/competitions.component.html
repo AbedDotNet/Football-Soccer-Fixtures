@@ -1,0 +1,24 @@
+<p>{{competitionsTitle}}</p>
+<div id='competitions'>
+  <div class='table-response'>
+    <table class='table' *ngIf='competitions && competitions.length'>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Name</th>
+          <th>Number of available seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let competition of competitions'>
+          <td>{{competition.area.name}}</td>
+          <td>{{competition.name}}</td>
+          <td>{{competition.numberOfAvailableSeasons}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div *ngIf='errorMessage' class='alert alert-danger'>
+  Error: {{ errorMessage }}
+</div>

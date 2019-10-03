@@ -1,0 +1,5 @@
+{
+  "ApiKey": "b41563624e5140e3a6770a3f29c20524",
+  "BaseUrl": "https://api.football-data.org/",
+  "GetCompetitionsUrl": "v2/competitions"
+}
